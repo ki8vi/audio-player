@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>audio player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="player-body">
+            <div class="song-image"><img src="./assets/image/what-a-life.jpg" alt="song-bg" id="song-img"></div>
+            <div class="audio-controls">
+                <div class="artist-area">
+                    <p class="artist">Scarlet Pleasure</p>
+                    <p class="title">What a life</p>
+                </div>
+               
+                <div class="play-area">
+                    <audio src="./assets/mp3/Scarlet_Pleasure_-_What_A_Life.mp3"></audio>
+                    <div class="play-btn">
+                        <img src="./assets/svg/play.svg" alt="play-btn" id="play">
+                        <img src="./assets/svg/pause.svg" alt="pause-btn" id="pause" style="display: none">
+                    </div>
+                    <div class="progress-area">
+                        <div class="progress-content"></div>
+                        
+                    </div>
+                    <div class="music-time">
+                        <div class="current-time"></div>
+                        <div class="common-time">00:00</div>
+                    </div>
+                    <div class="button-area">
+                        <div class="prev-btn play-btn"><img src="./assets/svg/prev.svg" alt="prev-btn"></div>
+                        <div class="next-btn play-btn"><img src="./assets/svg/next.svg" alt="next-btn"></div>
+                    </div>
+                </div>
+                <div class="down-area">
+                    <div class="volume">
+                        <div class="volume-down"><img src="./assets/volume/Volume-Down.png" alt="volume-down-img"></div>
+                        <div class="volume-level">
+                            <div class="level-num">10</div>
+                            <div class="level-inner"><div class="fake-num">1</div></div>
+                        </div>
+                        <div class="volume-up"><img src="./assets/volume/Volume-Up.png" alt="volume-up-img"></div>
+                    </div>
+                </div>
+                <div class="play-list-btn "><img src="./assets/svg/open-playlist.png" alt="play-list-btn"></div>
+            </div>
+            <div class="play-list-modal">
+                <div class="play-list-body">
+                    <div class="track">
+                        <div class="track-left">
+                            <div class="track-num">1</div>
+                            <div class="track-name">
+                                <div class="track-title">What a life</div>
+                                <div class="track-artist">Scarlet Pleasure</div>
+                            </div>
+                        </div>
+                        <div class="track-time">03:05</div>
+                    </div>
+                    <div class="track">
+                        <div class="track-left">
+                            <div class="track-num">2</div>
+                            <div class="track-name">
+                                <div class="track-title">Let it go</div>
+                                <div class="track-artist">Everlast</div>
+                            </div>
+                        </div>
+                        <div class="track-time">04:26</div>
+                    </div>
+                    <div class="track">
+                        <div class="track-left">
+                            <div class="track-num">3</div>
+                            <div class="track-name">
+                                <div class="track-title">Me haces falta</div>
+                                <div class="track-artist">Jennifer Lopez</div>
+                            </div>
+                        </div>
+                        <div class="track-time">03:37</div>
+                    </div>
+                    <div class="track">
+                        <div class="track-left">
+                            <div class="track-num">4</div>
+                            <div class="track-name">
+                                <div class="track-title">Je veux</div>
+                                <div class="track-artist">Zaz</div>
+                            </div>
+                        </div>
+                        <div class="track-time">03:36</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <footer>
+            <a href="https://github.com/ki8vi" target="_blank"><img src="./assets/footer/github.png" alt="git-logo"></a>
+            <a href="https://rs.school/js-stage0/" target="_blank"><img src="./assets/footer/rs_school_js.svg" alt="rs-logo"></a>
+            <p>2023</p>
+        </footer>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
